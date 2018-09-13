@@ -2,3 +2,4 @@
 /data/*
 /tf_board/*
 /__pycache__/*
+/.DS*
