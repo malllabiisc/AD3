@@ -1,0 +1,4 @@
+/log/*
+/data/*
+/tf_board/*
+/__pycache__/*
