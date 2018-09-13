@@ -66,10 +66,10 @@ For getting temporal graph of new documents. The following steps need to be foll
 
 * After installing python dependencies from `requirements.txt`, execute `sh setup.sh` for downloading GloVe embeddings.
 
-* `at_gcn.py` and `oe_gcn.py` contains TensorFlow (1.x) based implementation of AD3 (proposed method). 
+* `ac_gcn.py` and `oe_gcn.py` contains TensorFlow (1.x) based implementation of AD3 (proposed method). 
 * To start training: 
   ```shell
-  python at_gcn.py -data data/nyt_processed_data.pkl -class 10 -name test_run
+  python ac_gcn.py -data data/nyt_processed_data.pkl -class 10 -name test_run
   python oe_gcn.py -data data/nyt_processed_data.pkl -class 10 -name test_run
   ```
 
