@@ -3,7 +3,7 @@ EMNLP 2018: AD3: Attentive Deep Document Dater :: Swayambhu Nath Ray, Shib Sanka
 
 Source code and dataset for [EMNLP 2018](http://emnlp2018.org) paper: [AD3: Attentive Deep Document Dater](http://malllabiisc.github.io/publications/).
 
-![](https://github.com/malllabiisc/AD3/Model.png)
+![](https://github.com/malllabiisc/AD3/blob/master/Model.png)
 *Overview of AD3 (proposed method), an attention-based neural document dating system which utilizes both context and temporal information in documents in a flexible and principled manner. Please refer paper for more details.*
 
 ### Dependencies
