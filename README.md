@@ -54,7 +54,7 @@ For getting temporal graph of new documents. The following steps need to be foll
     	-c ./models/catena-causal-event-event.model > <destination_path>
    ```
 
-   The above command outputs the list of links in the temporal graph which are given as input to AD3. The output file can be read using the following command:
+   The above command outputs the list of links in the temporal graph which are given as input to Ordered-Event Model. The output file can be read using the following command:
 
    ```shell
    python preprocess/read_catena_out.py <catena_out_path> <destination_path>
@@ -66,10 +66,11 @@ For getting temporal graph of new documents. The following steps need to be foll
 
 * After installing python dependencies from `requirements.txt`, execute `sh setup.sh` for downloading GloVe embeddings.
 
-* `ad3.py` contains TensorFlow (1.x) based implementation of AD3 (proposed method). 
+* `at_gcn.py` and `oe_gcn.py` contains TensorFlow (1.x) based implementation of AD3 (proposed method). 
 * To start training: 
   ```shell
-  python ad3.py -data data/nyt_processed_data.pkl -class 10 -name test_run
+  python at_gcn.py -data data/nyt_processed_data.pkl -class 10 -name test_run
+  python oe_gcn.py -data data/nyt_processed_data.pkl -class 10 -name test_run
   ```
 
   * `-class` denotes the number of classes in datasets,  `10` for NYT and `16` for APW.
